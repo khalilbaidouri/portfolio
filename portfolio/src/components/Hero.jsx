@@ -4,7 +4,21 @@ import { assets } from "../assets/me";
 
 const Hero = () => {
   return (
-    <div id="hero" className="min-h-screen flex items-center pt-16">
+    <div id="hero" className="min-h-screen relative flex items-center pt-16">
+  {/* Dual Gradient Overlay Background */}
+  <div
+    className="absolute inset-0 -z-10"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, rgba(229,231,235,0.8) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(229,231,235,0.8) 1px, transparent 1px),
+        radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.3), transparent),
+        radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.3), transparent)
+      `,
+      backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
+    }}
+  />
+     {/* Your Content/Components */}
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Texte */}
