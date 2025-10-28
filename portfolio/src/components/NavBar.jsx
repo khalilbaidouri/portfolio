@@ -8,11 +8,10 @@ const NavBar = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="text-2xl font-bold text-zinc-800">
+          <a href="/" className="text-2xl font-bold text-zinc-800">
             <span>THE-</span>
-            <span className="text-teal-800 font-orbitron">KHALIL-</span>
-            <span className="text-teal-800 font-orbitron">BAIDOURI</span>
-          </div>
+            <span className="text-teal-800 font-orbitron">KHALIL-BAIDOURI</span>
+          </a>
 
           {/* Menu */}
           <div className="hidden md:flex space-x-8 border border-gray-200 rounded-full px-10 py-4">
