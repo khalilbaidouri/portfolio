@@ -21,6 +21,9 @@ export const skillsData = [
   { icon: '/img/git.jpg', title: 'Git' },
   { icon: '/img/gitHub.jpg', title: 'GitHub' },
   { icon: '/img/node.jpg', title: 'Node js' },
+  { icon: '/img/springBoot.jpg', title: 'Spring Boot' },
+  { icon: '/img/springSec.jpg', title: 'Spring security ' },
+  { icon: '/img/jwt.png', title: 'JWT' },
 ]
 export const projectsData = [
   {
