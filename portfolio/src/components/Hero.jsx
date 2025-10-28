@@ -4,7 +4,7 @@ import { assets } from "../assets/me";
 
 const Hero = () => {
   return (
-    <div id="hero" className="min-h-screen relative flex items-center pt-16">
+    <div id="home" className="min-h-screen relative flex items-center pt-16">
   {/* Dual Gradient Overlay Background */}
   <div
     className="absolute inset-0 -z-10"

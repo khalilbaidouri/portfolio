@@ -4,7 +4,7 @@ import Home from './pages/Home'
 
 const  App = () => {
   return (
-    <div >
+    <div className='scroll-smooth' >
       <Routes>
         <Route path='/' element={<Home />}></Route>
       </Routes>

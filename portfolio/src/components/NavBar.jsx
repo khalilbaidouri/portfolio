@@ -29,12 +29,12 @@ const NavBar = () => {
 
           {/* Resume Button */}
           <div>
-            <button
-              className="px-6 py-3 border border-zinc-800 rounded-full flex items-center gap-2 text-slate-600 hover:text-slate-900 hover:border-teal-700 hover:translate-y-1 transition duration-300"
+            <a download href="/CV.pdf"
+              className="px-6 py-3 border border-zinc-800 rounded-full flex items-center gap-2 text-slate-600 hover:text-slate-900 hover:border-teal-700 hover:translate-y-1 transition duration-300 cursor-pointer"
             >
               Resume
               <FaArrowRight className="text-gray-500 text-sm" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

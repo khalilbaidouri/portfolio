@@ -12,7 +12,7 @@ export const skillsData = [
   {
     icon: FaMicrochip,
     title: 'Backend',
-    technologies: ['Node.js', 'Express.js', 'Django', 'Flask', 'MongoDB', 'SQL', 'Java'],
+    technologies: ['Node.js', 'java.js', 'Django', 'Flask', 'MongoDB', 'SQL', 'Java'],
   },
   {
     icon: FaReact,
