@@ -10,7 +10,6 @@ const Home = () => {
       <NavBar />
       <Hero />
       <Skills />
-
     </div>
   );
 };
