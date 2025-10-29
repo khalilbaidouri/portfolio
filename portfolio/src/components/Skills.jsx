@@ -5,12 +5,12 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20  min-h-screen text-white overflow-hidden relative">
 
-<div className="min-h-screen w-full relative bg-white">
+<div className="min-h-screen w-full relative bg-white ">
   {/* Cool Blue Glow Right */}
-  <div
+   <div
     className="absolute inset-0 z-0"
     style={{
-      background: "#ffffff",
+      background: "#8B5CF64D",
       backgroundImage: `
         radial-gradient(
           circle at top right,
