@@ -31,7 +31,7 @@ const NavBar = () => {
             <a download href="/CV.pdf"
               className="px-6 py-3 border border-zinc-800 rounded-full flex items-center gap-2 text-slate-600 hover:text-slate-900 hover:border-teal-700 hover:translate-y-1 transition duration-300 cursor-pointer"
             >
-              Resume
+              Mon CV
               <FaArrowRight className="text-gray-500 text-sm" />
             </a>
           </div>
