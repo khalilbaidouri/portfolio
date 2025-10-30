@@ -20,11 +20,11 @@ const Hero = () => {
         }}
       />
       {/* Your Content/Components */}
-<div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Texte */}
           <div className="text-center lg:text-left">
-<h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 break-words">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 break-words">
               <span className="text-zinc-700">FullStack Developer</span>
               <br />
               <span className="text-cyan-700">Java</span>
@@ -41,20 +41,21 @@ const Hero = () => {
                 </button>
               </a>
 
-           <button
-  onClick={() => window.location.href = "mailto:khalilbaidouri97@gmail.com"}
-  className="flex items-center gap-2 border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 hover:text-zinc-800 transition duration-300 cursor-pointer"
->
-  Contact Me
-  <FaArrowAltCircleRight />
-</button>
-
+              <button
+                onClick={() =>
+                  (window.location.href = "mailto:khalilbaidouri97@gmail.com")
+                }
+                className="flex items-center gap-2 border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 hover:text-zinc-800 transition duration-300 cursor-pointer"
+              >
+                Contact Me
+                <FaArrowAltCircleRight />
+              </button>
             </div>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
-<div className="relative w-72 h-72 sm:w-80 sm:h-100 floating">
+            <div className="relative w-72 h-72 sm:w-80 sm:h-100 floating">
               <div className="absolute inset-0 rounded-2xl overflow-hidden border-4 border-slate-600/30 glow">
                 <img
                   className="w-full h-full object-cover"
