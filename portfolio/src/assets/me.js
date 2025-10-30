@@ -5,7 +5,7 @@ export const assets = {
   profilImg,
 };
 
-export const navMenu = ["Home", "Skills", "Projects", "Contact", "About","experience"];
+export const navMenu = ["Home", "Skills", "Projects", "Contact", "About","Experience","Education"];
 
 export const skillsData = [
   { icon: "/img/react.jpg", title: "React.js" },
@@ -31,7 +31,7 @@ export const projectsData = [
     description:
       "A full-stack solution developed with Spring Boot and React.js to digitize and optimize the management of technical interventions. The application centralizes the planning, real-time monitoring, and traceability of interventions, significantly improving operational efficiency and the coordination of technical teams.",
     imageUrl: "/img/ocp.png",
-    technologies: ["React.js", "Java", "Spring Security", "JWT", "PostgesSql"],
+    technologies: ["React.js", "Java", "Spring Security", "JWT", "PostgesSql","Tailwind CSS","Html"],
     gitHubLink: "https://github.com/khalilbaidouri/Gestion-des-Intervention",
     post: "fullstack developer",
     linkDeploy: "https://taskflow-black.vercel.app/#/login",
@@ -41,7 +41,7 @@ export const projectsData = [
     description:
       "Plateforme digitale moderne présentant les activités et valeurs du Biologists In Action Club. Interface intuitive permettant de découvrir les événements, projets humanitaires et opportunités d'engagement du club étudiant.",
     imageUrl: "/img/bac.png",
-    technologies: ["Express.js", "MongoDB", "JavaScript"],
+    technologies: ["Node.js", "Tailwind CSS", "React.js", "MongoDB","Next.js"],
     gitHubLink: "https://github.com/khalilbaidouri/Gestion-des-Intervention",
     post: "backend developer",
     linkDeploy: "https://club-bac.vercel.app/",
@@ -51,7 +51,7 @@ export const projectsData = [
     description:
       "An innovative application developed within an academic framework at the Faculty of Sciences and Techniques of Settat, offering a centralized solution for team collaboration.",
     imageUrl: "/img/projet.png",
-    technologies: ["Java", "JavaFX", "MySql"],
+    technologies: ["Java", "JavaFX","Spring Security", "MySql","JWT"],
     gitHubLink: "https://github.com/khalilbaidouri/projet-java",
     post: "backend developer",
     linkDeploy: "#",
