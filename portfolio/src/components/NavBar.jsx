@@ -7,13 +7,11 @@ const NavBar = () => {
     <div className="fixed w-full py-4 bg-white/70 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <a href="/" className="text-2xl font-bold text-zinc-800">
             <span>THE-</span>
             <span className="text-teal-800 font-orbitron">KHALIL-BAIDOURI</span>
           </a>
 
-          {/* Menu */}
           <div className="hidden md:flex space-x-8 border border-gray-200 rounded-full px-10 py-4">
             {navMenu.map((item, index) => (
               <a
@@ -26,7 +24,6 @@ const NavBar = () => {
             ))}
           </div>
 
-          {/* Resume Button */}
           <div>
             <a download href="/CV.pdf"
               className="px-6 py-3 border border-zinc-800 rounded-full flex items-center gap-2 text-slate-600 hover:text-slate-900 hover:border-teal-700 hover:translate-y-1 transition duration-300 cursor-pointer"
