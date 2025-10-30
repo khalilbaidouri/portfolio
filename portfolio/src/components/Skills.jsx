@@ -18,10 +18,8 @@ const Skills = () => {
         }}
       />
 
-      {/* 🌟 Section Title */}
       <h2 className="text-3xl font-bold text-center mb-10">My Skills</h2>
 
-      {/* 🎢 Scrolling Skills Row */}
       <div className="relative w-full overflow-hidden group">
         <div className="flex animate-scroll gap-8 px-4 w-max group-hover:[animation-play-state:paused] cursor-pointer">
           {skillsData.concat(skillsData).map((skill, index) => (
