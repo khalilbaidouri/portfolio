@@ -85,7 +85,7 @@ export const reseauData = [
   },
   {
     icon: FaLinkedin,
-    link: "www.linkedin.com/in/baidouri-khalil-874034330",
+    link: "https://www.linkedin.com/in/baidouri-khalil-874034330/",
     title: "LinkedIn",
   },
   {
