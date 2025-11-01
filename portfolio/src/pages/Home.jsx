@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import { Projects } from "../components/Projects";
-import About from "../components/About";
+import Education from "../components/Education";
 
 const Home = () => {
   return (
@@ -13,6 +13,7 @@ const Home = () => {
       <Hero />
       <Skills />
       <Projects />
+      <Education />
     </div>
   );
 };

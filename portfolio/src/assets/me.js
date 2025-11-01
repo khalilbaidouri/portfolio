@@ -99,3 +99,24 @@ export const reseauData = [
     title: "Facebook",
   },
 ];
+
+export const formationData = [
+  {
+    diploma: "Engineering Cycle in Computer Science",
+    institution: "Faculty of Sciences and Techniques, Settat",
+    period: "2024 - 2027",
+    last: true,
+  },
+  {
+    diploma: "DEUST",
+    institution: "Faculty of Sciences and Techniques, Settat",
+    period: "2022 - 2024",
+    last: false,
+  },
+  {
+    diploma: "Baccalaureate",
+    institution: "Mohammed IV High School, Casablanca",
+    period: "2021 - 2022",
+    last: false,
+  },
+];
