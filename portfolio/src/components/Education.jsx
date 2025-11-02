@@ -12,7 +12,7 @@ const Education = () => {
 
           <ul className="space-y-10 w-150">
             {formationData.map((formation, index) => (
-              <div className="w-40 md:w-200">
+              <div className="w-100 md:w-200">
                 <li key={index} className="relative pl-10 group">
                   <span className="absolute -left-3 top-2 flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full ring-4 ring-gray-50 dark:ring-gray-900 dark:bg-blue-700 transition-transform group-hover:scale-110">
                     <svg
