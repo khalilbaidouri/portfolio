@@ -42,6 +42,7 @@ const Hero = () => {
               </a>
 
               <button
+                id="contact"
                 onClick={() =>
                   (window.location.href = "mailto:khalilbaidouri97@gmail.com")
                 }
