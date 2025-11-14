@@ -10,13 +10,11 @@ const NavBar = () => {
       <div className="fixed w-full py-4 bg-white/70 backdrop-blur-md shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
-          {/* LOGO */}
           <a href="/" className="text-2xl font-bold text-zinc-800">
             <span>THE-</span>
             <span className="text-teal-800 font-orbitron">KHALIL-BAIDOURI</span>
           </a>
 
-          {/* BUTTON MOBILE (hamburger) */}
           <button
               className="md:hidden text-3xl text-zinc-700"
               onClick={() => setOpen(!open)}
@@ -24,7 +22,6 @@ const NavBar = () => {
             {open ? <HiX /> : <HiMenu />}
           </button>
 
-          {/* MENU DESKTOP */}
           <div className="hidden md:flex items-center space-x-8 border border-gray-200 rounded-full px-10 py-4">
             {navMenu.map((item, index) => (
                 <a
@@ -37,7 +34,6 @@ const NavBar = () => {
             ))}
           </div>
 
-          {/* CV DESKTOP */}
           <div className="hidden md:block w-60">
             <a
                 download
@@ -52,7 +48,6 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* MENU MOBILE (dropdown sous la navbar) */}
         {open && (
             <div className="md:hidden bg-white/90 backdrop-blur-md shadow-lg mt-3 py-4 px-6 space-y-4">
               {navMenu.map((item, index) => (

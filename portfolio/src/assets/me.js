@@ -17,6 +17,7 @@ export const navMenu = [
   "About",
   "Experience",
   "Education",
+  "Certifications",
 ];
 
 export const skillsData = [
@@ -119,4 +120,22 @@ export const formationData = [
     period: "2021 - 2022",
     last: false,
   },
+];
+
+export const certificationsData = [
+  {
+    title: "Oracle Certified Associate, Java SE 8 Programmer",  
+    issuer: "Oracle",
+    date: "2025",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=2802A778893CA58FC35DA8E8B4E3B351121B98851A70C99D81AB491216F0BB39",
+    imge: "/img/oracle.png",
+  },
+    {
+    title: "HackerRank Java (Basic) Certification",  
+    issuer: "HackerRank",
+    date: "2025",
+    link: "https://www.hackerrank.com/certificates/iframe/a0f322ce6f9b",
+    imge: "/img/hackerRank.png",
+  },
+
 ];
