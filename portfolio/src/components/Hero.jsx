@@ -44,6 +44,7 @@ const Hero = () => {
                 onClick={() =>
                   (window.location.href = "mailto:khalilbaidouri97@gmail.com")
                 }
+                
                 className="flex items-center gap-2 border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 hover:text-zinc-800 transition duration-300 cursor-pointer"
               >
                 Contact Me
