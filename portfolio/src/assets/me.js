@@ -77,6 +77,25 @@ export const projectsData = [
     post: "backend developer",
     linkDeploy: "#",
   },
+  {
+    title: "Social Media Platform",
+    description:
+      "A social networking application developed in collaboration with my colleague Mouad Sadik, allowing users to create and manage their profile, publish content, interact with other members and exchange messages, with secure access and role management.",
+    imageUrl: "/img/minista.png",
+    technologies: [
+      "Next.js",
+      "Java",
+      "Spring Security",
+      "JWT",
+      "MySqL",
+      "Tailwind CSS",
+      "Html",
+      "TypeScript",
+    ],
+    gitHubLink: "https://github.com/khalilbaidouri/social-media-backend",
+    post: "fullstack developer",
+    linkDeploy: "https://minista-chat.vercel.app/",
+  },
 ];
 export const reseauData = [
   {
@@ -124,18 +143,17 @@ export const formationData = [
 
 export const certificationsData = [
   {
-    title: "Oracle Certified Associate, Java SE 8 Programmer",  
+    title: "Oracle Certified Associate, Java SE 8 Programmer",
     issuer: "Oracle",
     date: "2025",
     link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=2802A778893CA58FC35DA8E8B4E3B351121B98851A70C99D81AB491216F0BB39",
     imge: "/img/oracle.png",
   },
-    {
-    title: "HackerRank Java (Basic) Certification",  
+  {
+    title: "HackerRank Java (Basic) Certification",
     issuer: "HackerRank",
     date: "2025",
     link: "https://www.hackerrank.com/certificates/iframe/a0f322ce6f9b",
     imge: "/img/hackerRank.png",
   },
-
 ];
