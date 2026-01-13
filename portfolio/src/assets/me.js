@@ -96,6 +96,25 @@ export const projectsData = [
     post: "fullstack developer",
     linkDeploy: "https://minista-chat.vercel.app/",
   },
+    {
+    title: "CAN Pick Them – Prediction game CAN 2025",
+    description:
+      "An interactive web game allowing fans to follow the tournament, predict match results and compete against other participants.",
+    imageUrl: "/img/landing.jpeg",
+    technologies: [
+      "Next.js",
+      "Java",
+      "Spring Security",
+      "JWT",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Html",
+      "TypeScript",
+    ],
+    gitHubLink: "https://github.com/MouadSadik/Pick-them-backend",
+    post: "fullstack developer",
+    linkDeploy: "https://pick-them-chi.vercel.app/",
+  },
 ];
 export const reseauData = [
   {
