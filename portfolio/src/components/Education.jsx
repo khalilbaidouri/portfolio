@@ -3,7 +3,7 @@ import React from "react";
 import { formationData } from "../assets/me";
 const Education = () => {
   return (
-    <section id="education" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="education" className="py-20 bg-gray-50 dark:bg-black">
       <h2 className="text-3xl font-bold text-center mb-10">My Educations</h2>
 
       <div className="max-w-5xl px-6">

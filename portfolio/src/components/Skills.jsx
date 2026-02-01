@@ -8,13 +8,22 @@ const Skills = () => {
       className="py-20 text-gray-900 dark:text-white overflow-hidden relative"
     >
       <div
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 -z-10 dark:opacity-20"
         style={{
           backgroundImage: `
             linear-gradient(to bottom, #ffffff, #A855F74D 60%),
             radial-gradient(125% 125% at 50% 90%, #ffffff 40%, #A855F74D 100%)
           `,
           backgroundBlendMode: "overlay",
+        }}
+      />
+      <div 
+        className="absolute inset-0 -z-10 hidden dark:block"
+        style={{
+             backgroundImage: `
+            linear-gradient(to bottom, #09090b, #581c874D 60%),
+            radial-gradient(125% 125% at 50% 90%, #09090b 40%, #581c874D 100%)
+          `, 
         }}
       />
 
