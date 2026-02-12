@@ -7,10 +7,15 @@ import { Projects } from "../components/Projects";
 import Education from "../components/Education";
 import Certifications from "../components/Certifications";
 import Snowfall from 'react-snowfall';
-
+import { motion } from "framer-motion";
 const Home = () => {
   return (
         <>
+         <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
 
 <Snowfall
   color="#FF0033"
@@ -32,6 +37,7 @@ const Home = () => {
       <Education />
       <Certifications />
     </div>
+    </motion.div>
         </>
 
   );

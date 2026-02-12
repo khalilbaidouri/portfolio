@@ -1,8 +1,16 @@
 import React from "react";
 import { skillsData } from "../assets/me";
+import { motion } from "framer-motion";
+
 
 const Skills = () => {
   return (
+        <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.8 }}
+      viewport={{ once: true }}
+    >
     <section
       id="skills"
       className="py-20 text-gray-900 dark:text-white overflow-hidden relative"
@@ -47,6 +55,7 @@ const Skills = () => {
         </div>
       </div>
     </section>
+    </motion.div>
   );
 };
 

@@ -1,8 +1,15 @@
 import React from "react";
 import { certificationsData } from "../assets/me";
+import {motion} from 'framer-motion';
 
 const Certifications = () => {
   return (
+        <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.8 }}
+      viewport={{ once: true }}
+    >
     <section
       id="certifications"
       className="py-20 bg-gray-50 dark:bg-black text-gray-900 dark:text-white"
@@ -62,6 +69,7 @@ const Certifications = () => {
         ))}
       </div>
     </section>
+    </motion.div>
   );
 };
 
