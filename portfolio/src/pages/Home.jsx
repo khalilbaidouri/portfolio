@@ -8,6 +8,7 @@ import Education from "../components/Education";
 import Certifications from "../components/Certifications";
 import Snowfall from 'react-snowfall';
 import { motion } from "framer-motion";
+import Chatbot from "../components/Chatbot";
 const Home = () => {
   return (
         <>
@@ -36,6 +37,7 @@ const Home = () => {
       <Projects />
       <Education />
       <Certifications />
+      <Chatbot />
     </div>
     </motion.div>
         </>
