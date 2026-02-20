@@ -1,20 +1,21 @@
 import Groq from "groq-sdk";
-import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
-const portfolioPath = path.join(process.cwd(), "data", "portfolio.txt");
+const portfolioPath = path.join(__dirname, "../data/portfolio.txt");
 const portfolioText = fs.readFileSync(portfolioPath, "utf-8");
 
 const systemContext = `
 Tu es l'assistant officiel du portfolio de Khalil.
 
 RÈGLES IMPORTANTES :
-- Réponds de manière claire, concise et professionnelle.
+- Réponds de manière claire, professionnelle et concise.
 - Ne pas inventer de données.
 
 DONNÉES DU PORTFOLIO :
@@ -22,6 +23,12 @@ ${portfolioText}
 `;
 
 export default async function handler(req, res) {
+  // CORS
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  if (req.method === "OPTIONS") return res.status(200).end();
   if (req.method !== "POST") return res.status(405).json({ error: "Méthode non autorisée" });
 
   const { message } = req.body;
@@ -39,9 +46,9 @@ export default async function handler(req, res) {
       top_p: 1,
     });
 
-    res.status(200).json({ reply: response.choices[0].message.content });
+    res.json({ reply: response.choices[0].message.content });
   } catch (error) {
-    console.error("Erreur Groq:", error.response?.data || error.message);
+    console.error("Erreur Groq:", error.message);
     res.status(500).json({ error: "Erreur serveur" });
   }
 }
