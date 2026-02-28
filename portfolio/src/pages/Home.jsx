@@ -18,18 +18,6 @@ const Home = () => {
       transition={{ duration: 1 }}
     >
 
-<Snowfall
-  color="#FF0033"
-/*   style={{
-    position: "fixed",
-    width: "100vw",
-    height: "100vh",
-    top: 0,
-    left: 0,
-    zIndex: 0,
-    pointerEvents: "none",
-  }} */
-/>
     <div>
       <NavBar />
       <Hero />
