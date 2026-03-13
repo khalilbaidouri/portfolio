@@ -1,0 +1,129 @@
+NAME
+Khalil Baidouri
+
+PROFILE
+Full-Stack Developer specialized in React, Java, Spring Boot and Spring Security.
+Engineering student in Computer Science.
+
+SKILLS
+React.js
+CSS
+Docker
+HTML
+Java
+JavaScript
+MySQL
+PostgreSQL
+Python
+C
+Git
+GitHub
+Node.js
+Spring Boot
+Spring Security
+JWT
+
+LANGUAGES
+Arabic: Native
+French: Fluent
+English: Intermediate
+
+INTERNSHIPS / STAGES
+1) Web Development Internship
+Company: OCP El Jadida
+Role: Full-Stack Developer
+Description: Participated in developing a web application for managing technical interventions using Spring Boot and React.js.
+Period: 2025 (2 months)
+
+PROJECTS
+
+1) Web Application Design and Development - OCP El Jadida
+Role: Full-Stack Developer
+Description:
+Full-stack solution developed with Spring Boot and React.js to digitize and optimize the management of technical interventions. The application centralizes planning, real-time monitoring and traceability of interventions.
+Technologies:
+React.js, Java, Spring Security, JWT, PostgreSQL, Tailwind CSS, HTML
+GitHub:
+https://github.com/khalilbaidouri/Gestion-des-Intervention
+Live Demo:
+https://taskflow-black.vercel.app/#/login
+
+2) BAC Club - Biologists In Action Club
+Role: Backend Developer
+Description:
+Modern digital platform presenting the activities and values of the Biologists In Action Club.
+Technologies:
+Node.js, Tailwind CSS, React.js, MongoDB, Next.js
+GitHub:
+https://github.com/khalilbaidouri/Gestion-des-Intervention
+Live Demo:
+https://club-bac.vercel.app/
+
+3) Collaborative Project Management Application
+Role: Backend Developer
+Description:
+Academic project developed at the Faculty of Sciences and Techniques of Settat. Centralized solution for team collaboration.
+Technologies:
+Java, JavaFX, Spring Security, MySQL, JWT
+GitHub:
+https://github.com/khalilbaidouri/projet-java
+
+4) Social Media Platform
+Role: Full-Stack Developer
+Description:
+Social networking application allowing users to manage profiles, publish content, interact and exchange messages with secure authentication and role management.
+Technologies:
+Next.js, Java, Spring Security, JWT, MySQL, Tailwind CSS, HTML, TypeScript
+GitHub:
+https://github.com/khalilbaidouri/social-media-backend
+Live Demo:
+https://minista-chat.vercel.app/
+
+5) CAN Pick Them – Prediction Game CAN 2025
+Role: Full-Stack Developer
+Description:
+Interactive web game allowing fans to follow the tournament, predict match results and compete against other participants.
+Technologies:
+Next.js, Java, Spring Security, JWT, PostgreSQL, Tailwind CSS, HTML, TypeScript
+GitHub:
+https://github.com/MouadSadik/Pick-them-backend
+Live Demo:
+https://pick-them-chi.vercel.app/
+
+EDUCATION
+
+Engineering Cycle in Computer Science
+Faculty of Sciences and Techniques, Settat
+2024 - 2027
+
+DEUST
+Faculty of Sciences and Techniques, Settat
+2022 - 2024
+
+Baccalaureate
+Mohammed IV High School, Casablanca
+2021 - 2022
+
+CERTIFICATIONS
+
+Oracle Certified Associate, Java SE 8 Programmer
+Issuer: Oracle
+Year: 2025
+
+HackerRank Java (Basic) Certification
+Issuer: HackerRank
+Year: 2025
+
+CONTACT
+
+GitHub:
+https://github.com/khalilbaidouri
+
+LinkedIn:
+https://www.linkedin.com/in/baidouri-khalil-874034330/
+
+Instagram:
+https://www.instagram.com/khalilbaidouri/
+
+Facebook:
+https://www.facebook.com/profile.php?id=100091862744544
