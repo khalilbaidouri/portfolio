@@ -6,26 +6,26 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.8 }}
-  viewport={{ once: true }}
->
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.8 }}
+      viewport={{ once: true }}
+    >
       <div
         id="home"
         className="min-h-screen relative flex items-center pt-16 overflow-hidden"
       >
-        {/* Dual Gradient Overlay Background */}
+        {/* Light Mode Background */}
         <div
           className="absolute inset-0 -z-10 transition-opacity duration-300"
           style={{
             backgroundImage: `
-            linear-gradient(to right, rgba(229,231,235,0.8) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(229,231,235,0.8) 1px, transparent 1px),
-            radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.3), transparent),
-            radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.3), transparent)
-          `,
+              linear-gradient(to right, rgba(229,231,235,0.8) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(229,231,235,0.8) 1px, transparent 1px),
+              radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.3), transparent),
+              radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.3), transparent)
+            `,
             backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
           }}
         />
@@ -35,25 +35,26 @@ const Hero = () => {
           className="absolute inset-0 -z-10 hidden dark:block"
           style={{
             backgroundImage: `
-            linear-gradient(to right, rgba(39, 39, 42, 0.8) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(39, 39, 42, 0.8) 1px, transparent 1px),
-            radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.15), transparent),
-            radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.15), transparent)
-          `,
+              linear-gradient(to right, rgba(39, 39, 42, 0.8) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(39, 39, 42, 0.8) 1px, transparent 1px),
+              radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.15), transparent),
+              radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.15), transparent)
+            `,
             backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
           }}
         />
 
-        {/* Your Content/Components */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 break-words text-zinc-900 dark:text-white">
                 <span className="text-zinc-700 dark:text-zinc-300">
-                  FullStack Developer
+                  Khalil Baidouri
                 </span>
                 <br />
-                <span className="text-cyan-700 dark:text-cyan-500">Java</span>
+                <span className="text-cyan-700 dark:text-cyan-500">
+                  FullStack Developer
+                </span>
               </h1>
               <About />
               <br />
@@ -85,7 +86,7 @@ const Hero = () => {
                   <img
                     className="w-full h-full object-cover"
                     src={assets.profilImg}
-                    alt="profile"
+                    alt="Khalil Baidouri - Développeur Full Stack"
                   />
                 </div>
               </div>
