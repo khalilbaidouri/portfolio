@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import NavBar from "../components/NavBar";
+import Footer from "../components/footer";
 
 const ContactForm = () => {
   const [form, setForm] = useState({
@@ -51,30 +52,37 @@ const ContactForm = () => {
     <>
       <Helmet>
         <title>Contact — Khalil Baidouri</title>
-        <meta
-          name="description"
-          content="Contactez Khalil Baidouri pour une collaboration, une mission freelance ou un simple échange. Réponse rapide garantie."
-        />
-        <meta
-          name="keywords"
-          content="contact, Khalil Baidouri, freelance, mission, collaboration, développeur"
-        />
+        <meta name="description" content="Contactez Khalil Baidouri pour une collaboration, une mission freelance ou un simple échange. Réponse rapide garantie." />
+        <meta name="keywords" content="contact, Khalil Baidouri, baidouri, freelance, mission, collaboration, développeur" />
         <meta name="author" content="Khalil Baidouri" />
         <meta property="og:title" content="Contact — Khalil Baidouri" />
-        <meta
-          property="og:description"
-          content="Une idée ou un projet ? Contactez Khalil Baidouri, développeur Full Stack disponible pour des missions."
-        />
+        <meta property="og:description" content="Une idée ou un projet ? Contactez Khalil Baidouri, développeur Full Stack disponible pour des missions." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://khalilbaidouri.dev/contact" />
+        <meta property="og:url" content="https://www.baidouri.site/form" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact — Khalil Baidouri" />
-        <meta
-          name="twitter:description"
-          content="Contactez Khalil Baidouri pour vos projets web et missions freelance."
-        />
-        <link rel="canonical" href="https://khalilbaidouri.dev/contact" />
+        <meta name="twitter:description" content="Contactez Khalil Baidouri pour vos projets web et missions freelance." />
+        <link rel="canonical" href="https://www.baidouri.site/form" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact — Khalil Baidouri",
+            "url": "https://www.baidouri.site/form",
+            "description": "Contactez Khalil Baidouri pour une collaboration ou une mission freelance.",
+            "author": {
+              "@type": "Person",
+              "name": "Khalil Baidouri",
+              "url": "https://www.baidouri.site",
+              "sameAs": [
+                "https://github.com/khalilbaidouri",
+                "https://www.linkedin.com/in/khalil-baidouri/"
+              ]
+            }
+          })}
+        </script>
       </Helmet>
+
       <NavBar />
 
       <motion.div
@@ -92,11 +100,11 @@ const ContactForm = () => {
             className="absolute inset-0 -z-10 dark:hidden"
             style={{
               backgroundImage: `
-                  linear-gradient(to right, rgba(229,231,235,0.8) 1px, transparent 1px),
-                  linear-gradient(to bottom, rgba(229,231,235,0.8) 1px, transparent 1px),
-                  radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.3), transparent),
-                  radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.3), transparent)
-                `,
+                linear-gradient(to right, rgba(229,231,235,0.8) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(229,231,235,0.8) 1px, transparent 1px),
+                radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.3), transparent),
+                radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.3), transparent)
+              `,
               backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
             }}
           />
@@ -106,11 +114,11 @@ const ContactForm = () => {
             className="absolute inset-0 -z-10 hidden dark:block"
             style={{
               backgroundImage: `
-                  linear-gradient(to right, rgba(39,39,42,0.8) 1px, transparent 1px),
-                  linear-gradient(to bottom, rgba(39,39,42,0.8) 1px, transparent 1px),
-                  radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.15), transparent),
-                  radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.15), transparent)
-                `,
+                linear-gradient(to right, rgba(39,39,42,0.8) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(39,39,42,0.8) 1px, transparent 1px),
+                radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.15), transparent),
+                radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.15), transparent)
+              `,
               backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
             }}
           />
@@ -189,12 +197,7 @@ const ContactForm = () => {
                       </p>
                       <button
                         onClick={() => {
-                          setForm({
-                            name: "",
-                            email: "",
-                            subject: "",
-                            message: "",
-                          });
+                          setForm({ name: "", email: "", subject: "", message: "" });
                           setSubmitted(false);
                         }}
                         className="flex gap-2 items-center mx-auto px-8 py-3 bg-black dark:bg-zinc-100 rounded-full text-slate-200 dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-white transition duration-300 font-medium text-sm"
@@ -203,11 +206,7 @@ const ContactForm = () => {
                       </button>
                     </motion.div>
                   ) : (
-                    <form
-                      onSubmit={handleSubmit}
-                      noValidate
-                      className="space-y-5"
-                    >
+                    <form onSubmit={handleSubmit} noValidate className="space-y-5">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                           <label className={labelClass}>Nom</label>
@@ -219,9 +218,7 @@ const ContactForm = () => {
                             className={fieldClass}
                           />
                           {errors.name && (
-                            <p className="mt-1 text-xs text-red-500">
-                              {errors.name}
-                            </p>
+                            <p className="mt-1 text-xs text-red-500">{errors.name}</p>
                           )}
                         </div>
                         <div>
@@ -235,9 +232,7 @@ const ContactForm = () => {
                             className={fieldClass}
                           />
                           {errors.email && (
-                            <p className="mt-1 text-xs text-red-500">
-                              {errors.email}
-                            </p>
+                            <p className="mt-1 text-xs text-red-500">{errors.email}</p>
                           )}
                         </div>
                       </div>
@@ -252,9 +247,7 @@ const ContactForm = () => {
                           className={fieldClass}
                         />
                         {errors.subject && (
-                          <p className="mt-1 text-xs text-red-500">
-                            {errors.subject}
-                          </p>
+                          <p className="mt-1 text-xs text-red-500">{errors.subject}</p>
                         )}
                       </div>
 
@@ -269,9 +262,7 @@ const ContactForm = () => {
                           className={fieldClass + " resize-none"}
                         />
                         {errors.message && (
-                          <p className="mt-1 text-xs text-red-500">
-                            {errors.message}
-                          </p>
+                          <p className="mt-1 text-xs text-red-500">{errors.message}</p>
                         )}
                       </div>
 
@@ -299,6 +290,8 @@ const ContactForm = () => {
           </div>
         </div>
       </motion.div>
+
+      <Footer />
     </>
   );
 };
