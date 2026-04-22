@@ -16,16 +16,30 @@ const Home = () => {
       <Helmet>
         <title>Khalil Baidouri — Développeur Full Stack</title>
         <meta name="description" content="Portfolio de Khalil Baidouri, développeur Full Stack passionné. Découvrez mes projets, compétences, formations et certifications." />
-        <meta name="keywords" content="Khalil Baidouri, développeur full stack, portfolio, React, Node.js" />
+        <meta name="keywords" content="Khalil Baidouri, baidouri, développeur full stack, portfolio, React, Java, Spring Boot" />
         <meta name="author" content="Khalil Baidouri" />
         <meta property="og:title" content="Khalil Baidouri — Développeur Full Stack" />
-        <meta property="og:description" content="Portfolio de Khalil Baidouri, développeur Full Stack." />
+        <meta property="og:description" content="Portfolio de Khalil Baidouri, développeur Full Stack spécialisé en React, Java et Spring Boot." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://khalilbaidouri.dev" />
+        <meta property="og:url" content="https://www.baidouri.site" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Khalil Baidouri — Développeur Full Stack" />
         <meta name="twitter:description" content="Portfolio de Khalil Baidouri — projets, compétences et formations." />
-        <link rel="canonical" href="https://khalilbaidouri.dev" />
+        <link rel="canonical" href="https://www.baidouri.site" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Khalil Baidouri",
+            "url": "https://www.baidouri.site",
+            "jobTitle": "Développeur Full Stack",
+            "description": "Développeur Full Stack spécialisé en React, Java et Spring Boot.",
+            "sameAs": [
+              "https://github.com/khalilbaidouri",
+              "https://www.linkedin.com/in/khalil-baidouri/"
+            ]
+          })}
+        </script>
       </Helmet>
 
       <motion.div
