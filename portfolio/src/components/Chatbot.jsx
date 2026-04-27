@@ -2,148 +2,179 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import { LuBotMessageSquare } from "react-icons/lu";
-
-
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const Chatbot = () => {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
+
   const messagesEndRef = useRef(null);
 
-  // Toggle fenêtre
   const toggleOpen = () => setOpen(!open);
 
-  // Scroll automatique
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    messagesEndRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
   }, [messages, loading]);
 
-  // Message par défaut à l'ouverture
   useEffect(() => {
     if (open && messages.length === 0) {
-      setLoading(true);
-      setTimeout(() => {
-        setMessages([
-          {
-            type: "bot",
-            text: "Hello 👋 I'm the assistant of Khalil. How can I help you today?",
-          },
-        ]);
-        setLoading(false);
-      }, 800);
+      setMessages([
+        {
+          type: "bot",
+          text: `# Hello 👋
+
+Je suis **l'assistant IA de Khalil**.
+
+Comment puis-je vous aider aujourd'hui ?`,
+        },
+      ]);
     }
   }, [open]);
 
-  // Envoyer message
   const sendMessage = async () => {
     if (!message.trim()) return;
 
-    const userMessage = message;
-    setMessages((prev) => [...prev, { type: "user", text: userMessage }]);
+    const userText = message;
+
+    setMessages((prev) => [
+      ...prev,
+      { type: "user", text: userText },
+    ]);
+
     setMessage("");
     setLoading(true);
 
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: userText,
+        }),
       });
-
-      if (!res.ok) throw new Error("Erreur serveur");
 
       const data = await res.json();
 
-      setMessages((prev) => [...prev, { type: "bot", text: data.reply }]);
-    } catch (err) {
       setMessages((prev) => [
         ...prev,
-        { type: "bot", text: "Erreur serveur" },
+        {
+          type: "bot",
+          text: data.reply,
+        },
+      ]);
+    } catch (error) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          type: "bot",
+          text: "❌ Une erreur est survenue.",
+        },
       ]);
     } finally {
       setLoading(false);
     }
   };
 
-  // Fonction pour afficher le texte formaté
-  const formatBotText = (text) => {
-    return text.split("\n").map((line, idx) => {
-      const isHeader = /^[A-Z\s]+$/.test(line.trim()); // lignes majuscules = titres
-      return (
-        <p key={idx} className={isHeader ? "font-bold mt-2" : "mt-1"}>
-          {line}
-        </p>
-      );
-    });
-  };
-
   return (
     <>
-      {/* Floating Button */}
+      {/* Button */}
       <button
         onClick={toggleOpen}
-        className="fixed bottom-6 right-6 z-50 bg-[#CDBAD8] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-200 cursor-pointer"
+        className="fixed bottom-6 right-6 z-50 bg-[#CDBAD8] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300"
       >
-        {open ? <FaTimes size={18} /> : <LuBotMessageSquare />}
+        {open ? <FaTimes size={18} /> : <LuBotMessageSquare size={20} />}
       </button>
 
-      {/* Chat Window */}
+      {/* Chat */}
       {open && (
-        <div className="fixed bottom-24 right-6 w-[360px] max-w-[95vw] h-[520px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden z-50 border border-gray-200">
+        <div className="fixed bottom-24 right-6 w-[390px] max-w-[95vw] h-[590px] bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col z-50">
 
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#CDBAD8] to-[#b79acb] text-white p-4 font-semibold text-sm tracking-wide shadow-md">
-            Assistant de Khalil
+          <div className="bg-gradient-to-r from-[#CDBAD8] to-[#b79acc] text-white p-4 font-semibold">
+            Khalil Assistant
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-gray-50 scrollbar-thin scrollbar-thumb-gray-300">
-            {messages.map((m, i) => (
+          <div className="flex-1 overflow-y-auto bg-gray-50 p-4 space-y-4">
+
+            {messages.map((msg, index) => (
               <div
-                key={i}
+                key={index}
                 className={`flex ${
-                  m.type === "user" ? "justify-end" : "justify-start"
+                  msg.type === "user"
+                    ? "justify-end"
+                    : "justify-start"
                 }`}
               >
                 <div
-                  className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm whitespace-pre-wrap break-words shadow-sm transition-all duration-200 ${
-                    m.type === "user"
+                  className={`max-w-[84%] px-4 py-3 rounded-2xl text-sm shadow-sm ${
+                    msg.type === "user"
                       ? "bg-[#CDBAD8] text-white rounded-br-none"
-                      : "bg-white text-gray-800 rounded-bl-none border border-gray-200"
+                      : "bg-white text-gray-800 border border-gray-200 rounded-bl-none"
                   }`}
                 >
-                  {m.type === "bot" ? formatBotText(m.text) : m.text}
+                  {msg.type === "bot" ? (
+                    <div className="prose prose-sm max-w-none text-gray-800
+                      prose-headings:text-gray-900
+                      prose-headings:font-bold
+                      prose-h1:text-lg
+                      prose-h2:text-base
+                      prose-p:my-2
+                      prose-ul:my-2
+                      prose-li:my-1
+                      prose-strong:text-black
+                      prose-pre:bg-gray-900
+                      prose-pre:text-white
+                      prose-pre:rounded-xl
+                      prose-code:text-pink-600
+                      prose-blockquote:border-l-4
+                      prose-blockquote:pl-3
+                    ">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {msg.text}
+                      </ReactMarkdown>
+                    </div>
+                  ) : (
+                    msg.text
+                  )}
                 </div>
               </div>
             ))}
 
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-white px-4 py-2 rounded-2xl text-sm shadow-sm border border-gray-200 animate-pulse">
-                  En train d’écrire...
+                <div className="bg-white px-4 py-2 rounded-2xl border border-gray-200 text-sm animate-pulse">
+                  Typing...
                 </div>
               </div>
             )}
 
-            <div ref={messagesEndRef} />
+            <div ref={messagesEndRef}></div>
           </div>
 
-
           {/* Input */}
-          <div className="flex items-center gap-2 p-3 border-t bg-white">
+          <div className="p-3 border-t bg-white flex gap-2">
             <input
               type="text"
+              placeholder="Tapez votre message..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Tapez votre message..."
-              className="flex-1 px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-[#CDBAD8] text-sm"
-              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+              onKeyDown={(e) =>
+                e.key === "Enter" && sendMessage()
+              }
+              className="flex-1 px-4 py-2 border rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#CDBAD8]"
             />
+
             <button
               onClick={sendMessage}
-              className="bg-[#CDBAD8] text-white p-2 rounded-full hover:brightness-95 transition-all duration-200 cursor-pointer"
+              className="bg-[#CDBAD8] text-white p-3 rounded-full hover:brightness-95 transition"
             >
               <FiSend size={16} />
             </button>
