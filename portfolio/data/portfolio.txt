@@ -2,128 +2,128 @@ NAME
 Khalil Baidouri
 
 PROFILE
-Full-Stack Developer specialized in React, Java, Spring Boot and Spring Security.
-Engineering student in Computer Science.
+Passionate Full-Stack Developer specialized in React.js, Java, Spring Boot and Spring Security.
+Currently pursuing an Engineering degree in Computer Science at the Faculty of Sciences and Techniques of Settat (FST Settat).
+I love building functional, secure and user-friendly web applications.
+Open to internship opportunities, collaborative projects and new challenges.
 
 SKILLS
-React.js
-CSS
-Docker
-HTML
-Java
-JavaScript
-MySQL
-PostgreSQL
-Python
-C
-Git
-GitHub
-Node.js
-Spring Boot
-Spring Security
-JWT
+
+Frontend:
+- React.js, Next.js, TypeScript, JavaScript
+- HTML5, CSS3, Tailwind CSS
+
+Backend:
+- Java, Spring Boot, Spring Security, JWT
+- Node.js
+
+Databases:
+- PostgreSQL, MySQL, MongoDB
+
+DevOps & Tools:
+- Docker, Git, GitHub
+
+Other:
+- Python, C, JavaFX
 
 LANGUAGES
-Arabic: Native
-French: Fluent
-English: Intermediate
+- Arabic: Native
+- French: Fluent
+- English: Intermediate
 
 INTERNSHIPS / STAGES
+
 1) Web Development Internship
-Company: OCP El Jadida
+Company: OCP El Jadida (Office Chérifien des Phosphates)
 Role: Full-Stack Developer
-Description: Participated in developing a web application for managing technical interventions using Spring Boot and React.js.
-Period: 2025 (2 months)
+Description:
+Participated in the design and development of a web application for managing technical interventions.
+Built with Spring Boot (backend) and React.js (frontend).
+Contributed to digitizing internal processes and improving operational efficiency.
+Period: 2025 — 2 months
 
 PROJECTS
 
-1) Web Application Design and Development - OCP El Jadida
+1) Technical Intervention Management System — OCP El Jadida
 Role: Full-Stack Developer
 Description:
-Full-stack solution developed with Spring Boot and React.js to digitize and optimize the management of technical interventions. The application centralizes planning, real-time monitoring and traceability of interventions.
-Technologies:
-React.js, Java, Spring Security, JWT, PostgreSQL, Tailwind CSS, HTML
-GitHub:
-https://github.com/khalilbaidouri/Gestion-des-Intervention
-Live Demo:
-https://taskflow-black.vercel.app/#/login
+Full-stack solution developed to digitize and optimize the management of technical interventions at OCP.
+The application centralizes planning, real-time monitoring and full traceability of interventions.
+Features include secure authentication, role-based access control, and a modern dashboard.
+Technologies: React.js, Java, Spring Boot, Spring Security, JWT, PostgreSQL, Tailwind CSS, HTML
+GitHub: https://github.com/khalilbaidouri/Gestion-des-Intervention
+Live Demo: https://taskflow-black.vercel.app/#/login
 
-2) BAC Club - Biologists In Action Club
+2) BAC Club — Biologists In Action Club Platform
 Role: Backend Developer
 Description:
-Modern digital platform presenting the activities and values of the Biologists In Action Club.
-Technologies:
-Node.js, Tailwind CSS, React.js, MongoDB, Next.js
-GitHub:
-https://github.com/khalilbaidouri/Gestion-des-Intervention
-Live Demo:
-https://club-bac.vercel.app/
+Modern digital platform presenting the activities, values and events of the Biologists In Action Club.
+Designed to engage members and share club news in a clean and accessible interface.
+Technologies: Node.js, React.js, Next.js, MongoDB, Tailwind CSS
+GitHub: https://github.com/khalilbaidouri/Gestion-des-Intervention
+Live Demo: https://club-bac.vercel.app/
 
 3) Collaborative Project Management Application
 Role: Backend Developer
 Description:
-Academic project developed at the Faculty of Sciences and Techniques of Settat. Centralized solution for team collaboration.
-Technologies:
-Java, JavaFX, Spring Security, MySQL, JWT
-GitHub:
-https://github.com/khalilbaidouri/projet-java
+Academic project developed at FST Settat. A centralized solution for team collaboration,
+task assignment, progress tracking and team communication.
+Technologies: Java, JavaFX, Spring Security, MySQL, JWT
+GitHub: https://github.com/khalilbaidouri/projet-java
 
-4) Social Media Platform
+4) Social Media Platform — Minista
 Role: Full-Stack Developer
 Description:
-Social networking application allowing users to manage profiles, publish content, interact and exchange messages with secure authentication and role management.
-Technologies:
-Next.js, Java, Spring Security, JWT, MySQL, Tailwind CSS, HTML, TypeScript
-GitHub:
-https://github.com/khalilbaidouri/social-media-backend
-Live Demo:
-https://minista-chat.vercel.app/
+Full-featured social networking application allowing users to manage profiles,
+publish content, interact with posts, and exchange private messages.
+Includes secure authentication, role management and a real-time messaging system.
+Technologies: Next.js, Java, Spring Boot, Spring Security, JWT, MySQL, TypeScript, Tailwind CSS
+GitHub: https://github.com/khalilbaidouri/social-media-backend
+Live Demo: https://minista-chat.vercel.app/
 
-5) CAN Pick Them – Prediction Game CAN 2025
+5) CAN Pick Them — Prediction Game CAN 2025
 Role: Full-Stack Developer
 Description:
-Interactive web game allowing fans to follow the tournament, predict match results and compete against other participants.
-Technologies:
-Next.js, Java, Spring Security, JWT, PostgreSQL, Tailwind CSS, HTML, TypeScript
-GitHub:
-https://github.com/MouadSadik/Pick-them-backend
-Live Demo:
-https://pick-them-chi.vercel.app/
+Interactive web game allowing football fans to follow the Africa Cup of Nations 2025,
+predict match results, earn points and compete in a live leaderboard against other participants.
+Technologies: Next.js, Java, Spring Boot, Spring Security, JWT, PostgreSQL, TypeScript, Tailwind CSS
+GitHub: https://github.com/MouadSadik/Pick-them-backend
+Live Demo: https://pick-them-chi.vercel.app/
 
 EDUCATION
 
 Engineering Cycle in Computer Science
-Faculty of Sciences and Techniques, Settat
-2024 - 2027
+Faculty of Sciences and Techniques, Settat (FST Settat)
+2024 — 2027 (in progress)
 
-DEUST
+DEUST — Sciences and Technologies
 Faculty of Sciences and Techniques, Settat
-2022 - 2024
+2022 — 2024
 
-Baccalaureate
+Baccalaureate — Physical Sciences
 Mohammed IV High School, Casablanca
-2021 - 2022
+2021 — 2022
 
 CERTIFICATIONS
 
-Oracle Certified Associate, Java SE 8 Programmer
+Oracle Certified Associate — Java SE 8 Programmer
 Issuer: Oracle
 Year: 2025
+Description: Official certification validating core Java programming skills including OOP, data types, operators, and exception handling.
 
 HackerRank Java (Basic) Certification
 Issuer: HackerRank
 Year: 2025
+Description: Certification validating proficiency in Java fundamentals including data structures, OOP and problem solving.
+
+AVAILABILITY
+Open to: internships, freelance missions, collaborative projects
+Location: Morocco (Settat / Casablanca)
+Status: Available
 
 CONTACT
-
-GitHub:
-https://github.com/khalilbaidouri
-
-LinkedIn:
-https://www.linkedin.com/in/baidouri-khalil-874034330/
-
-Instagram:
-https://www.instagram.com/khalilbaidouri/
-
-Facebook:
-https://www.facebook.com/profile.php?id=100091862744544
+GitHub: https://github.com/khalilbaidouri
+LinkedIn: https://www.linkedin.com/in/baidouri-khalil-874034330/
+Instagram: https://www.instagram.com/khalilbaidouri/
+Facebook: https://www.facebook.com/profile.php?id=100091862744544
+Email: (ajoutez votre email ici)
