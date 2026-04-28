@@ -158,7 +158,7 @@ const Chatbot = () => {
                 Khalil Assistant
               </p>
               <p className="text-xs text-white/80 leading-tight">
-                Bonjour, dans l'assistant de Khalil 👋
+                Bonjour, dans l'assistant de Khalil
               </p>
             </div>
             <div className="ml-auto w-2 h-2 rounded-full bg-green-300"></div>
