@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-const allowedOrigins = ["http://localhost:5173", "https://www.baidouri.site/"];
+const allowedOrigins = ["http://localhost:5173", "https://www.baidouri.site"];
 
 app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
