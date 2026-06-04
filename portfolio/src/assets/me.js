@@ -60,7 +60,7 @@ export const projectsData = [
   {
     title: "BAC Club - Biologists In Action Club",
     description:
-      "Plateforme digitale moderne présentant les activités et valeurs du Biologists In Action Club. Interface intuitive permettant de découvrir les événements, projets humanitaires et opportunités d'engagement du club étudiant.",
+      "Plateforme digitale moderne présentant les activités et valeurs du Biologists In Action Club. Interface intuitive permettant de découvrir les événements, projets humanitaires et opportunités d'engagement du club étudiant with the team.",
     imageUrl: "/img/bac.png",
     technologies: ["Node.js", "Tailwind CSS", "React.js", "MongoDB", "Next.js"],
     gitHubLink: "https://github.com/khalilbaidouri/Gestion-des-Intervention",
@@ -80,7 +80,7 @@ export const projectsData = [
   {
     title: "Social Media Platform",
     description:
-      "A social networking application developed in collaboration with my colleague Mouad Sadik, allowing users to create and manage their profile, publish content, interact with other members and exchange messages, with secure access and role management.",
+      "A social networking application developed in collaboration with Mouad Sadik, allowing users to create and manage their profiles, publish content, interact with other members, exchange messages, and benefit from secure authentication and role-based access management.",
     imageUrl: "/img/minista.png",
     technologies: [
       "Next.js",
@@ -96,7 +96,7 @@ export const projectsData = [
     post: "fullstack developer",
     linkDeploy: "https://minista-chat.vercel.app/",
   },
-    {
+  {
     title: "CAN Pick Them – Prediction game CAN 2025",
     description:
       "An interactive web game allowing fans to follow the tournament, predict match results and compete against other participants.",
@@ -114,6 +114,24 @@ export const projectsData = [
     gitHubLink: "https://github.com/MouadSadik/Pick-them-backend",
     post: "fullstack developer",
     linkDeploy: "https://pick-them-chi.vercel.app/",
+  },
+
+  {
+    title: "TurathNa – Moroccan Heritage Marketplace",
+    description:
+      "A digital platform dedicated to preserving and promoting Moroccan artisanal heritage. Developed in collaboration with Mouad Sadik, it enables certified artisans to showcase and sell their creations, while collectors can discover authentic artworks, explore traditional crafts, and purchase securely through a modern marketplace, with Ibrahim ait-kadiss mouad sadik and badereddine ziane.",
+    imageUrl: "/img/turathna.png",
+    technologies: [
+      "Next.js",
+      "Better-Auth",
+      "Supabase",
+      "Tailwind CSS",
+      "TypeScript",
+      "HTML",
+    ],
+    gitHubLink: "https://github.com/khalilbaidouri/TurathNa",
+    post: "Fullstack Developer",
+    linkDeploy: "https://turathna-nine.vercel.app/",
   },
 ];
 export const reseauData = [
