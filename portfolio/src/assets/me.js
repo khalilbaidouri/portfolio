@@ -37,6 +37,10 @@ export const skillsData = [
   { icon: "/img/springBoot.jpg", title: "Spring Boot" },
   { icon: "/img/springSec.jpg", title: "Spring security " },
   { icon: "/img/jwt.png", title: "JWT" },
+  { icon: "/img/flutter.svg", title: "flutter" },
+  { icon: "/img/next-js.svg", title: "Next.js" },
+  { icon: "/img/supabase.jpg", title: "Supabase" },
+  { icon: "/img/dart.png", title: "Dart" },
 ];
 export const projectsData = [
   {
