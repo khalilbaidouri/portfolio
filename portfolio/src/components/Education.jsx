@@ -15,14 +15,14 @@ const Education = () => {
           My Educations
         </h2>
 
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="relative">
-            <div className="absolute left-0 top-0 w-1 h-full bg-gray-300 dark:bg-gray-700"></div>
+            <div className="absolute left-[10px] top-0 w-1 h-full bg-gray-300 dark:bg-gray-700"></div>
 
-            <ul className="space-y-10 max-w-4xl mx-auto">
+            <ul className="space-y-10">
               {formationData.map((formation, index) => (
                 <li key={index} className="relative pl-10 group">
-                  <span className="absolute -left-3 top-2 flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full ring-4 ring-gray-50 dark:ring-gray-900 dark:bg-blue-700 transition-transform group-hover:scale-110">
+                  <span className="absolute left-0 top-2 flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full ring-4 ring-gray-50 dark:ring-gray-900 dark:bg-blue-700 transition-transform group-hover:scale-110">
                     <svg
                       className="w-3 h-3 text-white"
                       fill="currentColor"

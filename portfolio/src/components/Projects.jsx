@@ -38,7 +38,7 @@ export const Projects = () => {
       >
         <h2 className="text-3xl font-bold text-center mb-10">My Projects</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
           {visibleProjects.length === 0 ? (
             <p className="text-center col-span-full">Chargement...</p>
           ) : (
@@ -48,8 +48,9 @@ export const Projects = () => {
                 key={index}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full block"
               >
-                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow duration-300">
+                <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow duration-300">
                   <img
                     className="rounded-t-lg w-full h-48 object-cover"
                     src={project.imageUrl}

@@ -81,7 +81,7 @@ const Hero = () => {
             </div>
 
             <div className="flex justify-center">
-              <div className="relative w-72 h-72 sm:w-80 sm:h-100 floating">
+              <div className="relative w-72 h-72 sm:w-80 sm:h-96 floating">
                 <div className="absolute inset-0 rounded-2xl overflow-hidden border-4 border-slate-600/30 glow">
                   <img
                     className="w-full h-full object-cover"
