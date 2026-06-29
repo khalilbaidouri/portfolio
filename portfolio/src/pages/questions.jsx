@@ -97,13 +97,13 @@ const ContactForm = () => {
         >
           {/* Light Mode Background */}
           <div
-            className="absolute inset-0 -z-10 dark:hidden"
+            className="absolute inset-0 -z-10 transition-opacity duration-500 opacity-100 dark:opacity-0"
             style={{
               backgroundImage: `
-                linear-gradient(to right, rgba(229,231,235,0.8) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(229,231,235,0.8) 1px, transparent 1px),
-                radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.3), transparent),
-                radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.3), transparent)
+                linear-gradient(to right, rgba(229,231,235,0.3) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(229,231,235,0.3) 1px, transparent 1px),
+                radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.2), transparent),
+                radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.2), transparent)
               `,
               backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
             }}
@@ -111,13 +111,13 @@ const ContactForm = () => {
 
           {/* Dark Mode Background */}
           <div
-            className="absolute inset-0 -z-10 hidden dark:block"
+            className="absolute inset-0 -z-10 transition-opacity duration-500 opacity-0 dark:opacity-100"
             style={{
               backgroundImage: `
-                linear-gradient(to right, rgba(39,39,42,0.8) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(39,39,42,0.8) 1px, transparent 1px),
-                radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.15), transparent),
-                radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.15), transparent)
+                linear-gradient(to right, rgba(63,63,70,0.15) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(63,63,70,0.15) 1px, transparent 1px),
+                radial-gradient(circle 500px at 20% 80%, rgba(139,92,246,0.1), transparent),
+                radial-gradient(circle 500px at 80% 20%, rgba(59,130,246,0.1), transparent)
               `,
               backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
             }}
@@ -166,7 +166,7 @@ const ContactForm = () => {
                 transition={{ duration: 1, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <div className="bg-white/60 dark:bg-zinc-900/60 backdrop-blur-md border border-slate-200 dark:border-zinc-800 rounded-2xl p-8 shadow-xl">
+                <div className="bg-white/70 dark:bg-zinc-900/40 backdrop-blur-md border border-gray-150/80 dark:border-zinc-800/80 rounded-2xl p-8 shadow-xl dark:shadow-cyan-500/5">
                   {submitted ? (
                     <motion.div
                       initial={{ opacity: 0, scale: 0.95 }}

@@ -9,7 +9,7 @@ const NavBar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="fixed w-full py-4 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-md shadow-sm z-50 transition-colors duration-300">
+    <div className="fixed w-full py-4 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-gray-150/40 dark:border-zinc-900/80 shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a
           href="/"
@@ -28,7 +28,7 @@ const NavBar = () => {
           {open ? <HiX /> : <HiMenu />}
         </button>
 
-        <div className="hidden md:flex items-center space-x-8 border border-gray-200 dark:border-zinc-700/50 rounded-full px-10 py-4 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-md">
+        <div className="hidden md:flex items-center space-x-8 border border-gray-150/80 dark:border-zinc-800/80 rounded-full px-10 py-4 bg-white/50 dark:bg-zinc-900/40 backdrop-blur-md">
           {navMenu.map((item, index) => (
             <a
               key={index}
@@ -64,7 +64,7 @@ const NavBar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md shadow-lg mt-3 py-4 px-6 space-y-4 rounded-lg border border-gray-100 dark:border-zinc-800">
+        <div className="md:hidden bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md shadow-lg mt-3 py-4 px-6 space-y-4 rounded-lg border border-gray-100 dark:border-zinc-900/60">
           <div className="flex justify-end">
             <button
               onClick={toggleTheme}

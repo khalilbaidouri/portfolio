@@ -14,20 +14,20 @@ const markdownComponents = {
     </div>
   ),
   thead: ({ children }) => (
-    <thead className="bg-[#EEEDFE] text-[#3C3489]">{children}</thead>
+    <thead className="bg-[#EEEDFE] dark:bg-zinc-800/80 text-[#3C3489] dark:text-cyan-400">{children}</thead>
   ),
   th: ({ children }) => (
     <th className="px-3 py-2 text-left font-medium text-xs">{children}</th>
   ),
   td: ({ children }) => (
-    <td className="px-3 py-2 border-b border-gray-100 text-xs">{children}</td>
+    <td className="px-3 py-2 border-b border-gray-100 dark:border-zinc-800/50 text-xs">{children}</td>
   ),
   a: ({ href, children }) => (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-[#7F77DD] font-medium hover:text-[#534AB7] transition-colors inline-flex items-center gap-1 underline break-all"
+      className="text-[#7F77DD] dark:text-cyan-400 font-medium hover:text-[#534AB7] dark:hover:text-cyan-300 transition-colors inline-flex items-center gap-1 underline break-all"
     >
       {children}
     </a>
@@ -46,7 +46,7 @@ const markdownComponents = {
       </SyntaxHighlighter>
     ) : (
       <code
-        className="bg-[#f0eaf8] text-[#7F77DD] rounded px-1 py-0.5 text-xs font-mono"
+        className="bg-[#f0eaf8] dark:bg-purple-950/40 text-[#7F77DD] dark:text-purple-300 rounded px-1 py-0.5 text-xs font-mono"
         {...props}
       >
         {children}
@@ -54,22 +54,22 @@ const markdownComponents = {
     );
   },
   blockquote: ({ children }) => (
-    <blockquote className="border-l-4 border-[#CDBAD8] pl-3 my-2 text-gray-500 italic text-sm">
+    <blockquote className="border-l-4 border-[#CDBAD8] dark:border-purple-600 pl-3 my-2 text-gray-500 dark:text-zinc-400 italic text-sm">
       {children}
     </blockquote>
   ),
   h1: ({ children }) => (
-    <h1 className="text-base font-semibold mt-2 mb-1 text-gray-900">
+    <h1 className="text-base font-semibold mt-2 mb-1 text-gray-900 dark:text-zinc-50">
       {children}
     </h1>
   ),
   h2: ({ children }) => (
-    <h2 className="text-sm font-semibold mt-2 mb-1 text-gray-800">
+    <h2 className="text-sm font-semibold mt-2 mb-1 text-gray-800 dark:text-zinc-200">
       {children}
     </h2>
   ),
   h3: ({ children }) => (
-    <h3 className="text-sm font-medium mt-1 mb-1 text-gray-700">{children}</h3>
+    <h3 className="text-sm font-medium mt-1 mb-1 text-gray-700 dark:text-zinc-300">{children}</h3>
   ),
   ul: ({ children }) => (
     <ul className="list-disc pl-4 my-1 space-y-0.5 text-sm">{children}</ul>
@@ -81,7 +81,7 @@ const markdownComponents = {
     <p className="my-1 leading-relaxed text-sm">{children}</p>
   ),
   strong: ({ children }) => (
-    <strong className="font-semibold text-gray-900">{children}</strong>
+    <strong className="font-semibold text-gray-900 dark:text-white">{children}</strong>
   ),
 };
 
@@ -138,18 +138,18 @@ const Chatbot = () => {
     <>
       <button
         onClick={toggleOpen}
-        className="fixed bottom-6 right-6 z-50 bg-[#CDBAD8] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300"
+        className="fixed bottom-6 right-6 z-50 bg-[#CDBAD8] dark:bg-purple-600 text-white p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300 hover:shadow-purple-500/20 dark:hover:shadow-purple-500/30"
       >
         {open ? <FaTimes size={18} /> : <LuBotMessageSquare size={20} />}
       </button>
 
       {open && (
         <div
-          className="fixed bottom-24 right-6 w-[390px] max-w-[95vw] bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col z-50"
+          className="fixed bottom-24 right-6 w-[390px] max-w-[95vw] bg-white dark:bg-zinc-900/95 dark:backdrop-blur-md rounded-3xl shadow-2xl border border-gray-200 dark:border-zinc-805/80 overflow-hidden flex flex-col z-50 transition-all duration-300"
           style={{ height: "min(590px, calc(100dvh - 120px))" }}
         >
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#CDBAD8] to-[#b79acc] text-white px-4 py-3 flex items-center gap-3 shrink-0">
+          <div className="bg-gradient-to-r from-[#CDBAD8] to-[#b79acc] dark:from-purple-900/90 dark:to-indigo-950/90 text-white px-4 py-3 flex items-center gap-3 shrink-0">
             <div className="w-8 h-8 rounded-full bg-white/30 flex items-center justify-center text-white font-bold text-sm">
               K
             </div>
@@ -165,7 +165,7 @@ const Chatbot = () => {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto bg-gray-50 p-4 space-y-4 min-h-0">
+          <div className="flex-1 overflow-y-auto bg-gray-50 dark:bg-zinc-950/70 p-4 space-y-4 min-h-0">
             {messages.map((msg, index) => (
               <div
                 key={index}
@@ -174,8 +174,8 @@ const Chatbot = () => {
                 <div
                   className={`max-w-[84%] px-4 py-3 rounded-2xl shadow-sm ${
                     msg.type === "user"
-                      ? "bg-[#CDBAD8] text-white rounded-br-none text-sm"
-                      : "bg-white text-gray-800 border border-gray-200 rounded-bl-none"
+                      ? "bg-[#CDBAD8] dark:bg-purple-600 text-white rounded-br-none text-sm"
+                      : "bg-white dark:bg-zinc-800 text-gray-800 dark:text-zinc-100 border border-gray-200 dark:border-zinc-700/50 rounded-bl-none text-sm"
                   }`}
                 >
                   {msg.type === "bot" ? (
@@ -194,7 +194,7 @@ const Chatbot = () => {
 
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-white px-4 py-2 rounded-2xl border border-gray-200 text-sm animate-pulse text-gray-400">
+                <div className="bg-white dark:bg-zinc-800 px-4 py-2 rounded-2xl border border-gray-200 dark:border-zinc-700/50 text-sm animate-pulse text-gray-400 dark:text-zinc-500">
                   Typing...
                 </div>
               </div>
@@ -203,18 +203,18 @@ const Chatbot = () => {
           </div>
 
           {/* Input */}
-          <div className="p-3 border-t bg-white flex gap-2 shrink-0">
+          <div className="p-3 border-t border-gray-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900 flex gap-2 shrink-0">
             <input
               type="text"
               placeholder="Tapez votre message..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-              className="flex-1 px-4 py-2 border rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#CDBAD8]"
+              className="flex-1 px-4 py-2 border border-gray-200 dark:border-zinc-800 rounded-full text-sm bg-transparent text-zinc-900 dark:text-zinc-100 placeholder-gray-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#CDBAD8] dark:focus:ring-purple-500"
             />
             <button
               onClick={sendMessage}
-              className="bg-[#CDBAD8] text-white p-3 rounded-full hover:brightness-95 transition"
+              className="bg-[#CDBAD8] dark:bg-purple-600 text-white p-3 rounded-full hover:brightness-95 dark:hover:bg-purple-700 transition flex items-center justify-center cursor-pointer"
             >
               <FiSend size={16} />
             </button>

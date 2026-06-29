@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 mt-20">
+    <footer className="bg-zinc-50 dark:bg-zinc-950/60 backdrop-blur-sm border-t border-zinc-200 dark:border-zinc-900 mt-20">
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* TOP */}
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">

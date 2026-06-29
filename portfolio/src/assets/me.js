@@ -61,6 +61,43 @@ export const projectsData = [
     post: "fullstack developer",
     linkDeploy: "https://taskflow-black.vercel.app/#/login",
   },
+  
+  {
+    title: "TurathNa – Moroccan Heritage Marketplace",
+    description:
+      "A digital platform dedicated to preserving and promoting Moroccan artisanal heritage. Developed in collaboration with Mouad Sadik, it enables certified artisans to showcase and sell their creations, while collectors can discover authentic artworks, explore traditional crafts, and purchase securely through a modern marketplace, with Ibrahim ait-kadiss mouad sadik and badereddine ziane.",
+    imageUrl: "/img/turathna.png",
+    technologies: [
+      "Next.js",
+      "Better-Auth",
+      "Supabase",
+      "Tailwind CSS",
+      "TypeScript",
+      "HTML",
+    ],
+    gitHubLink: "https://github.com/khalilbaidouri/TurathNa",
+    post: "Fullstack Developer",
+    linkDeploy: "https://turathna-nine.vercel.app/",
+  },
+    {
+    title: "CAN Pick Them – Prediction game CAN 2025",
+    description:
+      "An interactive web game allowing fans to follow the tournament, predict match results and compete against other participants.",
+    imageUrl: "/img/landing.jpeg",
+    technologies: [
+      "Next.js",
+      "Java",
+      "Spring Security",
+      "JWT",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Html",
+      "TypeScript",
+    ],
+    gitHubLink: "https://github.com/MouadSadik/Pick-them-backend",
+    post: "fullstack developer",
+    linkDeploy: "https://pick-them-chi.vercel.app/",
+  },
   {
     title: "BAC Club - Biologists In Action Club",
     description:
@@ -100,43 +137,8 @@ export const projectsData = [
     post: "fullstack developer",
     linkDeploy: "https://minista-chat.vercel.app/",
   },
-  {
-    title: "CAN Pick Them – Prediction game CAN 2025",
-    description:
-      "An interactive web game allowing fans to follow the tournament, predict match results and compete against other participants.",
-    imageUrl: "/img/landing.jpeg",
-    technologies: [
-      "Next.js",
-      "Java",
-      "Spring Security",
-      "JWT",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "Html",
-      "TypeScript",
-    ],
-    gitHubLink: "https://github.com/MouadSadik/Pick-them-backend",
-    post: "fullstack developer",
-    linkDeploy: "https://pick-them-chi.vercel.app/",
-  },
 
-  {
-    title: "TurathNa – Moroccan Heritage Marketplace",
-    description:
-      "A digital platform dedicated to preserving and promoting Moroccan artisanal heritage. Developed in collaboration with Mouad Sadik, it enables certified artisans to showcase and sell their creations, while collectors can discover authentic artworks, explore traditional crafts, and purchase securely through a modern marketplace, with Ibrahim ait-kadiss mouad sadik and badereddine ziane.",
-    imageUrl: "/img/turathna.png",
-    technologies: [
-      "Next.js",
-      "Better-Auth",
-      "Supabase",
-      "Tailwind CSS",
-      "TypeScript",
-      "HTML",
-    ],
-    gitHubLink: "https://github.com/khalilbaidouri/TurathNa",
-    post: "Fullstack Developer",
-    linkDeploy: "https://turathna-nine.vercel.app/",
-  },
+
 ];
 export const reseauData = [
   {
