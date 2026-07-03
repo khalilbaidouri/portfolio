@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import { Projects } from "../components/Projects";
+import Experience from "../components/Experience";
 import Education from "../components/Education";
 import Certifications from "../components/Certifications";
 import Chatbot from "../components/Chatbot";
@@ -51,6 +52,7 @@ const Home = () => {
         <Hero />
         <Skills />
         <Projects />
+        <Experience />
         <Education />
         <Certifications />
         <Chatbot />

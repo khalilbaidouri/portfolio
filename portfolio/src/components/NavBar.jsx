@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { navMenu } from "../assets/me";
 import { FaArrowRight } from "react-icons/fa";
 import { HiMenu, HiX, HiMoon, HiSun } from "react-icons/hi";
@@ -7,6 +8,16 @@ import { useTheme } from "../context/ThemeContext";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const getNavLink = (item) => {
+    const sectionId = item.toLowerCase();
+    if (sectionId === "home") {
+      return isHome ? "#home" : "/";
+    }
+    return isHome ? `#${sectionId}` : `/#${sectionId}`;
+  };
 
   return (
     <div className="fixed w-full py-4 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-gray-150/40 dark:border-zinc-900/80 shadow-sm z-50">
@@ -32,7 +43,7 @@ const NavBar = () => {
           {navMenu.map((item, index) => (
             <a
               key={index}
-              href={`#${item.toLowerCase()}`}
+              href={getNavLink(item)}
               className="text-gray-700 dark:text-gray-300 hover:text-teal-700 dark:hover:text-teal-400 transition duration-300"
             >
               {item}
@@ -76,7 +87,7 @@ const NavBar = () => {
           {navMenu.map((item, index) => (
             <a
               key={index}
-              href={`#${item.toLowerCase()}`}
+              href={getNavLink(item)}
               className="block text-gray-700 dark:text-gray-200 text-lg font-medium hover:text-teal-700 dark:hover:text-teal-400 transition"
               onClick={() => setOpen(false)}
             >

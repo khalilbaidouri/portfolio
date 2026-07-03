@@ -33,11 +33,11 @@ export const skillsData = [
   { icon: "/img/c.jpg", title: "C" },
   { icon: "/img/git.jpg", title: "Git" },
   { icon: "/img/gitHub.jpg", title: "GitHub" },
-  { icon: "/img/node.jpg", title: "Node js" },
+  { icon: "/img/node.jpg", title: "Node.js" },
   { icon: "/img/springBoot.jpg", title: "Spring Boot" },
-  { icon: "/img/springSec.jpg", title: "Spring security " },
+  { icon: "/img/springSec.jpg", title: "Spring Security" },
   { icon: "/img/jwt.png", title: "JWT" },
-  { icon: "/img/flutter.svg", title: "flutter" },
+  { icon: "/img/flutter.svg", title: "Flutter" },
   { icon: "/img/next-js.svg", title: "Next.js" },
   { icon: "/img/supabase.jpg", title: "Supabase" },
   { icon: "/img/dart.png", title: "Dart" },
@@ -53,9 +53,9 @@ export const projectsData = [
       "Java",
       "Spring Security",
       "JWT",
-      "PostgesSql",
+      "PostgreSQL",
       "Tailwind CSS",
-      "Html",
+      "HTML",
     ],
     gitHubLink: "https://github.com/khalilbaidouri/Gestion-des-Intervention",
     post: "fullstack developer",
@@ -91,7 +91,7 @@ export const projectsData = [
       "JWT",
       "PostgreSQL",
       "Tailwind CSS",
-      "Html",
+      "HTML",
       "TypeScript",
     ],
     gitHubLink: "https://github.com/MouadSadik/Pick-them-backend",
@@ -113,7 +113,7 @@ export const projectsData = [
     description:
       "An innovative application developed within an academic framework at the Faculty of Sciences and Techniques of Settat, offering a centralized solution for team collaboration.",
     imageUrl: "/img/projet.png",
-    technologies: ["Java", "JavaFX", "Spring Security", "MySql", "JWT"],
+    technologies: ["Java", "JavaFX", "Spring Security", "MySQL", "JWT"],
     gitHubLink: "https://github.com/khalilbaidouri/projet-java",
     post: "backend developer",
     linkDeploy: "#",
@@ -128,9 +128,9 @@ export const projectsData = [
       "Java",
       "Spring Security",
       "JWT",
-      "MySqL",
+      "MySQL",
       "Tailwind CSS",
-      "Html",
+      "HTML",
       "TypeScript",
     ],
     gitHubLink: "https://github.com/khalilbaidouri/social-media-backend",
@@ -200,3 +200,15 @@ export const certificationsData = [
     imge: "/img/hackerRank.png",
   },
 ];
+
+export const experienceData = [
+  {
+    role: "Full-Stack Developer (Internship)",
+    company: "OCP El Jadida (Office Chérifien des Phosphates)",
+    period: "2025 (1 month)",
+    description: "Design and development of a web application to digitize and optimize the management of technical interventions. The application centralizes planning, real-time tracking, and full intervention traceability, improving operational coordination.",
+    technologies: ["Spring Boot", "React.js", "Spring Security", "JWT", "PostgreSQL"],
+    last: true,
+  }
+];
+

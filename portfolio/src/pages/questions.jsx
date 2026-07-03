@@ -93,7 +93,7 @@ const ContactForm = () => {
       >
         <div
           id="contact-section"
-          className="min-h-screen relative flex items-center pt-16 overflow-hidden"
+          className="min-h-screen relative pt-32 pb-16"
         >
           {/* Light Mode Background */}
           <div

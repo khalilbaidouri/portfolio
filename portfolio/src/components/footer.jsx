@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  FaGithub,
-  FaLinkedin,
   FaEnvelope,
   FaArrowAltCircleRight,
 } from "react-icons/fa";
+import { reseauData } from "../assets/me";
 
 const Footer = () => {
   return (
@@ -69,25 +68,22 @@ const Footer = () => {
               Réseaux
             </p>
             <div className="flex gap-4 text-xl text-zinc-600 dark:text-zinc-400">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-zinc-900 dark:hover:text-white transition duration-200"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-200"
-              >
-                <FaLinkedin />
-              </a>
+              {reseauData.map((network, index) => (
+                <a
+                  key={index}
+                  href={network.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-200"
+                  title={network.title}
+                >
+                  <network.icon />
+                </a>
+              ))}
               <a
                 href="mailto:khalilbaidouri97@gmail.com"
                 className="hover:text-zinc-900 dark:hover:text-white transition duration-200"
+                title="Email"
               >
                 <FaEnvelope />
               </a>

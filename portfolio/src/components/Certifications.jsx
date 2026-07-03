@@ -41,10 +41,7 @@ const Certifications = () => {
                   {cert.description}
                 </p>
 
-                <a
-                  href={cert.link || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <span
                   className="inline-flex items-center px-4 py-2 text-xs font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 rounded-lg shadow-md shadow-purple-500/15 dark:shadow-none hover:shadow-lg transition-all duration-300"
                 >
                   Voir
@@ -63,7 +60,7 @@ const Certifications = () => {
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </span>
               </div>
             </div>
           </a>
