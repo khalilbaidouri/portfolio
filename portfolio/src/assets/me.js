@@ -202,13 +202,40 @@ export const certificationsData = [
 ];
 
 export const experienceData = [
+  /* 
+   {
+    role: "Backend Java Developer (Internship)",
+    company: "Synertic",
+    period: "2026 (2 months)",
+    description:
+      "Collaborated with a development team to build a banking platform for SWIFT message management based on a microservices architecture. Contributed to the implementation of secure REST APIs, authentication and authorization with Keycloak, asynchronous communication using Apache Kafka, and backend development with Spring Boot while following Agile methodologies and GitFlow.",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "Keycloak",
+      "OAuth2",
+      "JWT",
+      "Apache Kafka",
+      "PostgreSQL",
+      "JPA/Hibernate",
+      "Git",
+      "GitFlow",
+      "Docker",
+      "Microservices",
+      "REST API"
+    ],
+    last: true,
+    imageUrl: "/img/synertic.png",
+  }, */
   {
     role: "Full-Stack Developer (Internship)",
     company: "OCP El Jadida (Office Chérifien des Phosphates)",
     period: "2025 (1 month)",
     description: "Design and development of a web application to digitize and optimize the management of technical interventions. The application centralizes planning, real-time tracking, and full intervention traceability, improving operational coordination.",
-    technologies: ["Spring Boot", "React.js", "Spring Security", "JWT", "PostgreSQL"],
+    technologies: ["Spring Boot", "React.js", "Spring Security", "JWT", "PostgreSQL" ,"Docker"],
     last: true,
+    imageUrl: "/img/Logo-OCP_header.svg",
   }
 ];
 

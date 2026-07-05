@@ -44,6 +44,7 @@ const Experience = () => {
                   <span className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 block">
                     {exp.period}
                   </span>
+                  
                 </div>
 
                 {/* Content Card */}
@@ -53,13 +54,16 @@ const Experience = () => {
                   <div className="absolute left-0 top-0 w-1.5 h-full bg-gradient-to-b from-teal-500 to-cyan-500 group-hover:from-cyan-500 group-hover:to-blue-500 transition-colors duration-300"></div>
 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-600 group-hover:to-blue-600 dark:group-hover:from-teal-400 dark:group-hover:to-cyan-400 transition-all duration-300">
-                        {exp.role}
-                      </h3>
-                      <p className="text-sm font-semibold text-teal-700 dark:text-teal-400 mt-1">
-                        {exp.company}
-                      </p>
+                    <div className="flex items-center gap-4">
+            
+                      <div>
+                        <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-600 group-hover:to-blue-600 dark:group-hover:from-teal-400 dark:group-hover:to-cyan-400 transition-all duration-300">
+                          {exp.role}
+                        </h3>
+                        <p className="text-sm font-semibold text-teal-700 dark:text-teal-400 mt-1">
+                          {exp.company}
+                        </p>
+                      </div>
                     </div>
 
                     {/* Date capsule for mobile */}

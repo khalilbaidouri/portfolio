@@ -8,12 +8,7 @@ const About = () => {
       </h2>
 
       <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-        Hi, I’m <span className="font-bold text-teal-600 dark:text-teal-400">Khalil</span>, a{" "}
-        <span className="font-semibold text-purple-600 dark:text-purple-400">Full-Stack Developer</span> and{" "}
-        <span className="font-semibold text-cyan-600 dark:text-cyan-400">Computer Engineering student</span>. I specialize in web development with{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-medium">React</span> and{" "}
-        <span className="text-red-600 dark:text-red-400 font-medium">Java</span>, and I have hands-on experience with{" "}
-        <span className="font-semibold text-yellow-600 dark:text-yellow-400">Spring Security</span> for building secure and robust applications. I love creating functional, user-friendly web apps, exploring new technologies, and continuously improving my skills in software development.
+       Hi, I'm <span className="font-bold text-teal-600 dark:text-teal-400">Khalil</span>, a <span className="font-semibold text-purple-600 dark:text-purple-400">Software Engineer</span> and <span className="font-semibold text-cyan-600 dark:text-cyan-400">Full-Stack Developer</span>. I enjoy designing and building modern, scalable, and secure web applications using <span className="text-indigo-600 dark:text-indigo-400 font-medium">React</span>, <span className="text-red-600 dark:text-red-400 font-medium">Java</span>, and the <span className="font-semibold text-green-600 dark:text-green-400">Spring Boot</span> ecosystem. I'm passionate about solving real-world problems, learning new technologies, and continuously improving my software engineering skills. 
       </p>
 
       <div className="flex justify-center lg:justify-start space-x-4 mt-4">

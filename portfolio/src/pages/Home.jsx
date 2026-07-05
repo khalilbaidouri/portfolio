@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Khalil Baidouri — Développeur Full Stack</title>
+<title>Khalil Baidouri — Software Engineer</title>
         <meta name="description" content="Portfolio de Khalil Baidouri, développeur Full Stack passionné. Découvrez mes projets, compétences, formations et certifications." />
         <meta name="keywords" content="Khalil Baidouri, baidouri, développeur full stack, portfolio, React, Java, Spring Boot" />
         <meta name="author" content="Khalil Baidouri" />

@@ -53,7 +53,7 @@ const Hero = () => {
                 </span>
                 <br />
                 <span className="text-cyan-700 dark:text-cyan-500">
-                  FullStack Developer
+                  Software Engineer
                 </span>
               </h1>
               <About />
