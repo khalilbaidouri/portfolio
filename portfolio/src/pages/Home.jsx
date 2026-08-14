@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
