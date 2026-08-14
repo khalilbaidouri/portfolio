@@ -62,7 +62,7 @@ const NavBar = () => {
           <div className="w-48">
             <a
               download
-              href="/CV.pdf"
+              href="/CV_Khalil_Baidouri.pdf"
               className="px-6 py-3 border border-zinc-800 rounded-full flex items-center gap-2
             text-slate-600 hover:text-slate-900 hover:border-teal-700 hover:translate-y-1
             transition duration-300 cursor-pointer"
