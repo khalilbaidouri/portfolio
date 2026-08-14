@@ -55,7 +55,23 @@ const Experience = () => {
 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                     <div className="flex items-center gap-4">
-            
+                      {exp.imageUrl && (
+                        exp.companyUrl ? (
+                          <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer">
+                            <img
+                              src={exp.imageUrl}
+                              alt={exp.company}
+                              className="w-16 h-16 object-contain mb-2 rounded-lg hover:scale-110 transition-transform duration-300 cursor-pointer"
+                            />
+                          </a>
+                        ) : (
+                          <img
+                            src={exp.imageUrl}
+                            alt={exp.company}
+                            className="w-16 h-16 object-contain mb-2 rounded-lg"
+                          />
+                        )
+                      )}
                       <div>
                         <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-600 group-hover:to-blue-600 dark:group-hover:from-teal-400 dark:group-hover:to-cyan-400 transition-all duration-300">
                           {exp.role}

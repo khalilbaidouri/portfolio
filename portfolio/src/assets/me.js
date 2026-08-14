@@ -41,6 +41,9 @@ export const skillsData = [
   { icon: "/img/next-js.svg", title: "Next.js" },
   { icon: "/img/supabase.jpg", title: "Supabase" },
   { icon: "/img/dart.png", title: "Dart" },
+  { icon: "/img/angular.svg", title: "Angular" },
+  { icon: "/img/kafka.png", title: "Apache Kafka" },
+  { icon: "/img/camel.jpg", title: "Apache Camel" },
 ];
 export const projectsData = [
   {
@@ -61,7 +64,7 @@ export const projectsData = [
     post: "fullstack developer",
     linkDeploy: "https://taskflow-black.vercel.app/#/login",
   },
-  
+
   {
     title: "TurathNa – Moroccan Heritage Marketplace",
     description:
@@ -79,7 +82,7 @@ export const projectsData = [
     post: "Fullstack Developer",
     linkDeploy: "https://turathna-nine.vercel.app/",
   },
-    {
+  {
     title: "CAN Pick Them – Prediction game CAN 2025",
     description:
       "An interactive web game allowing fans to follow the tournament, predict match results and compete against other participants.",
@@ -137,8 +140,6 @@ export const projectsData = [
     post: "fullstack developer",
     linkDeploy: "https://minista-chat.vercel.app/",
   },
-
-
 ];
 export const reseauData = [
   {
@@ -202,13 +203,12 @@ export const certificationsData = [
 ];
 
 export const experienceData = [
-  /* 
-   {
+  {
     role: "Backend Java Developer (Internship)",
     company: "Synertic",
-    period: "2026 (2 months)",
+    period: "2026 (Present)",
     description:
-      "Collaborated with a development team to build a banking platform for SWIFT message management based on a microservices architecture. Contributed to the implementation of secure REST APIs, authentication and authorization with Keycloak, asynchronous communication using Apache Kafka, and backend development with Spring Boot while following Agile methodologies and GitFlow.",
+      "Contributed to the backend development of a confidential microservices-based application using Java and Spring Boot.",
     technologies: [
       "Java",
       "Spring Boot",
@@ -223,19 +223,29 @@ export const experienceData = [
       "GitFlow",
       "Docker",
       "Microservices",
-      "REST API"
+      "REST API",
     ],
     last: true,
+    //imageUrl: "/img/supabase.jpg",
     imageUrl: "/img/synertic.png",
-  }, */
+    companyUrl: "https://www.synertic.ma/",
+  },
   {
     role: "Full-Stack Developer (Internship)",
     company: "OCP El Jadida (Office Chérifien des Phosphates)",
     period: "2025 (1 month)",
-    description: "Design and development of a web application to digitize and optimize the management of technical interventions. The application centralizes planning, real-time tracking, and full intervention traceability, improving operational coordination.",
-    technologies: ["Spring Boot", "React.js", "Spring Security", "JWT", "PostgreSQL" ,"Docker"],
+    description:
+      "Design and development of a web application to digitize and optimize the management of technical interventions. The application centralizes planning, real-time tracking, and full intervention traceability, improving operational coordination.",
+    technologies: [
+      "Spring Boot",
+      "React.js",
+      "Spring Security",
+      "JWT",
+      "PostgreSQL",
+      "Docker",
+    ],
     last: true,
     imageUrl: "/img/Logo-OCP_header.svg",
-  }
+    companyUrl: "https://www.ocpgroup.ma/",
+  },
 ];
-
