@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
@@ -15,30 +14,57 @@ const Home = () => {
   return (
     <>
       <Helmet>
-<title>Khalil Baidouri — Software Engineer</title>
-        <meta name="description" content="Portfolio de Khalil Baidouri, développeur Full Stack passionné. Découvrez mes projets, compétences, formations et certifications." />
-        <meta name="keywords" content="Khalil Baidouri, baidouri, développeur full stack, portfolio, React, Java, Spring Boot" />
+        <title>Khalil Baidouri — Software Engineer</title>
+
+        <meta
+          name="description"
+          content="Portfolio de Khalil Baidouri, Software Engineer. Découvrez mes projets, compétences, expériences, formations et certifications."
+        />
+
+        <meta
+          name="keywords"
+          content="Khalil Baidouri, Software Engineer, software engineering, Java, Spring Boot, React, full stack, microservices, portfolio"
+        />
+
         <meta name="author" content="Khalil Baidouri" />
-        <meta property="og:title" content="Khalil Baidouri — Développeur Full Stack" />
-        <meta property="og:description" content="Portfolio de Khalil Baidouri, développeur Full Stack spécialisé en React, Java et Spring Boot." />
+
+        <meta
+          property="og:title"
+          content="Khalil Baidouri — Software Engineer"
+        />
+        <meta
+          property="og:description"
+          content="Portfolio de Khalil Baidouri, Software Engineer spécialisé en Java, Spring Boot, React et architectures microservices."
+        />
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.baidouri.site" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Khalil Baidouri — Développeur Full Stack" />
-        <meta name="twitter:description" content="Portfolio de Khalil Baidouri — projets, compétences et formations." />
+        <meta
+          name="twitter:title"
+          content="Khalil Baidouri — Software Engineer"
+        />
+        <meta
+          name="twitter:description"
+          content="Portfolio de Khalil Baidouri — projets, compétences, expériences et formations."
+        />
+
         <link rel="canonical" href="https://www.baidouri.site" />
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Khalil Baidouri",
-            "url": "https://www.baidouri.site",
-            "jobTitle": "Développeur Full Stack",
-            "description": "Développeur Full Stack spécialisé en React, Java et Spring Boot.",
-            "sameAs": [
+            name: "Khalil Baidouri",
+            url: "https://www.baidouri.site",
+            jobTitle: "Software Engineer",
+            description:
+              "Software Engineer spécialisé en Java, Spring Boot, React et architectures microservices.",
+            sameAs: [
               "https://github.com/khalilbaidouri",
-              "https://www.linkedin.com/in/khalil-baidouri/"
-            ]
+              "https://www.linkedin.com/in/khalil-baidouri/",
+            ],
           })}
         </script>
       </Helmet>
