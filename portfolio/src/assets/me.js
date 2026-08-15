@@ -102,16 +102,6 @@ export const projectsData = [
     linkDeploy: "https://pick-them-chi.vercel.app/",
   },
   {
-    title: "BAC Club - Biologists In Action Club",
-    description:
-      "Plateforme digitale moderne présentant les activités et valeurs du Biologists In Action Club. Interface intuitive permettant de découvrir les événements, projets humanitaires et opportunités d'engagement du club étudiant with the team.",
-    imageUrl: "/img/bac.png",
-    technologies: ["Node.js", "Tailwind CSS", "React.js", "MongoDB", "Next.js"],
-    gitHubLink: "https://github.com/khalilbaidouri/Gestion-des-Intervention",
-    post: "backend developer",
-    linkDeploy: "https://club-bac.vercel.app/",
-  },
-  {
     title: "Collaborative Project Management Application",
     description:
       "An innovative application developed within an academic framework at the Faculty of Sciences and Techniques of Settat, offering a centralized solution for team collaboration.",
