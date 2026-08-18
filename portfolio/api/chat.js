@@ -68,7 +68,7 @@ export default async function handler(req, res) {
         ...conversationHistory,
         { role: "user", content: message },
       ],
-      model: "llama-3.3-70b-versatile", // ✅ modèle plus fiable
+      model: "openai/gpt-oss-120b", // ✅ modèle plus fiable
       temperature: 0.3,
       max_completion_tokens: 800,
       top_p: 1,
@@ -77,7 +77,6 @@ export default async function handler(req, res) {
     return res.status(200).json({
       reply: response.choices[0].message.content,
     });
-
   } catch (error) {
     console.error("Erreur Groq:", error.message);
 

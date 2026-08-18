@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import NavBar from "../components/NavBar";
 import Footer from "../components/footer";
-
+import emailjs from "@emailjs/browser";
 const ContactForm = () => {
   const [form, setForm] = useState({
     name: "",
@@ -32,15 +32,34 @@ const ContactForm = () => {
     if (errors[name]) setErrors((p) => ({ ...p, [name]: undefined }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const errs = validate();
-    if (Object.keys(errs).length > 0) {
-      setErrors(errs);
-      return;
-    }
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const errs = validate();
+
+  if (Object.keys(errs).length > 0) {
+    setErrors(errs);
+    return;
+  }
+
+  try {
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: form.name,
+        email: form.email,
+        subject: form.subject,
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
+
     setSubmitted(true);
-  };
+  } catch (error) {
+    console.error("Erreur EmailJS :", error);
+  }
+};
 
   const fieldClass =
     "w-full bg-transparent border border-slate-300 dark:border-zinc-700 rounded-xl px-4 py-3 text-zinc-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-cyan-500 dark:focus:border-cyan-500 transition duration-300 text-sm";

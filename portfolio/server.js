@@ -60,7 +60,7 @@ app.post("/api/chat", async (req, res) => {
         ...conversationHistory,
         { role: "user", content: message },
       ],
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       temperature: 0.3,
       max_completion_tokens: 800,
       top_p: 1,
